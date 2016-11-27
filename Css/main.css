@@ -1,0 +1,78 @@
+body{
+	/*text-align: center;*/
+}
+section {
+	margin-left: auto;
+	margin-right:auto;
+	width: 95%;
+}
+
+#header{
+	margin-top: 20px;
+	border-bottom: solid 2px darkgray;
+}
+
+#header div{
+	display: inline-block;
+	height: 120px;
+}
+
+#logo-div{
+	float:left;
+}
+
+#cards{
+	float: right;
+}
+
+#search-container{
+	width: 60%;
+	margin: 0px auto 0px auto;
+	padding-top: 35px;
+	padding-left: 20px;
+}
+
+#search-box{
+	vertical-align: top;
+	width: 75%;
+	height: 50px;
+	font-size: 18px;
+	line-height: 50px;
+}
+
+#header input[type="submit"]{
+	vertical-align: top;
+	height: 50px;
+	width: 15%;
+	text-align: center;
+	border:none;
+	margin: 0;
+	color: white;
+	background-color: #009966;
+}
+
+.offer-btn{ 
+	background-color: #009966;
+	height: 150px;
+	margin: 10px 0;
+}
+
+#buttons .col-sm-4:nth-child(2) .offer-btn{
+	margin: 10px;
+}
+
+#slider{
+	text-align: center;
+}
+
+.carousel-inner img{
+	margin: auto;
+}
+
+.carousel-inner{
+	background-color: darkgray; 
+}
+
+#buttons div.col-sm-4{
+	padding: 0;
+}
