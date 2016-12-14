@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title> Online Bank Payment</title>
-		<link rel="stylesheet" type="text/css" href="../CSS/bank.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/shipping.css">
 		<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
 		<script type="text/javascript" src="../JS/jquery-3.1.1.min.js"></script>
@@ -12,7 +12,6 @@
 	</head>
 
 	<body class="body-en">
-
 
 	<section id="header">
 		<div id="logo-div"><img id="logo" src="../Images/Logo.png" alt="Logo" style="width:280px;height:110px;"></div>
@@ -25,13 +24,13 @@
 				<p>Cart</p>
 			</div>
 		</div>
-		<div class="prog-item-wrapper middle passed">
+		<div class="prog-item-wrapper middle active">
 			<div class="prog-item">
 				<span class="glyphicon glyphicon-send"></span>
 				<p>Shipping</p>
 			</div>
 		</div>
-		<div class="prog-item-wrapper middle active">
+		<div class="prog-item-wrapper middle">
 			<div class="prog-item">
 				<span class="glyphicon glyphicon-usd"></span>
 				<p>Payment</p>
@@ -44,34 +43,48 @@
 			</div>
 		</div>
 	</section>
-	<section id="progress-body">
+
+
+
+		<section id="progress-body">
 		<div id="payment-wrapper">
-			<h1>Payment</h1>
+			<h1>Shipping Address</h1>
 			<div id="payment-form-wrapper">
-				<h3>New Card</h3>
-				<div class="info"><span class="glyphicon glyphicon-credit-card"></span>We accept Visa, Discover, JCB, and MasterCard.</div>
 				<form id="payment-form" class="form-horizontal">
 			    <div class="form-group">
-			      <label class="control-label col-sm-2" for="email">Card Number*:</label>
+			      <label class="control-label col-sm-2" for="email"></label>
 			      <div class="col-sm-10">
-			        <input type="text" class="form-control card-num" id="email" placeholder="">
-			        <input type="text" class="form-control card-num" id="email" placeholder="">
-			        <input type="text" class="form-control card-num" id="email" placeholder="">
-			        <input type="text" class="form-control card-num" id="email" placeholder="">
+			        <input type="email" class="form-control" id="email" placeholder="First Name">
 			      </div>
 			    </div>
 			    <div class="form-group">
-			      <label class="control-label col-sm-2" for="pwd">CVV2*:</label>
+			      <label class="control-label col-sm-2" for="pwd"></label>
 			      <div class="col-sm-10">          
-			        <input type="password" class="form-control" id="pwd" placeholder="">
+			        <input type="password" class="form-control" id="pwd" placeholder="Last Name">
 			      </div>
 			    </div>
 			    <div class="form-group">
-			      <label class="control-label col-sm-2" for="pwd">Expiration Date*:</label>
+			      <label class="control-label col-sm-2" for="pwd"></label>
 			      <div class="col-sm-10">          
-			        <input type="email" class="form-control" id="pwd" placeholder="MMYY">
+			        <input type="email" class="form-control" id="pwd" placeholder="Street Address">
+			        <input type="email" class="form-control" id="pwd" placeholder="Suite, Building, Apt, etc.(optional)">
 			      </div>
 			    </div>
+			   <!--  <div> <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Country<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">US</a></li>
+		            <li><a href="#">Canada</a></li>
+		            <li><a href="#">Islamic Republic of Iran</a></li>
+		            </div> -->
+				  <select name="Country">
+				  	<option value="select">--country--</option>
+
+				    <option value="USA">USA</option>
+				    <option value="Canada">Canada</option>
+				    <option value="Iran">Iran</option>
+				    <option value="arabs">Arabs</option>
+				  </select>
 			    <div class="form-group">        
 			      <div class=" col-sm-10">
 			        <div class="checkbox">
@@ -89,12 +102,3 @@
 			</div>
 		</div>
 	</section>
-
-	<section id="footer">
-		<div id="footer-div"><img id="logo" src="../Images/master.png" alt="Logo" style="width:550;height:50px;"></div>
-		<p> Copryright © 2016 TheOnlineBookstore.neocities.org </p>
-	</section>
-
-
-	</body>
-</html>

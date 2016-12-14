@@ -1,0 +1,118 @@
+body{
+	/*text-align: center;*/
+}
+section {
+	margin-left: auto;
+	margin-right:auto;
+	width: 95%;
+}
+
+#header{
+	margin-top: 20px;
+	border-bottom: solid 2px darkgray;
+	overflow: hidden;
+	text-align: center;
+}
+
+#header div{
+	display: inline-block;
+	height: 100px;
+}
+
+#logo-div{
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.prog-item-wrapper{
+	display: inline-block;
+	border-bottom: solid 3px lightgray;
+	width: 29%;
+	margin: 30px .5%;
+	height: 22px;
+	overflow: visible;
+	text-align: center;
+	vertical-align: top;
+}
+
+.prog-item-wrapper.last{
+	width: 19%;
+	margin-right: 0;
+}
+
+.prog-item-wrapper.first{
+	width: 19%;
+	margin-left: 0;
+}
+
+.prog-item{
+	display: inline-block;
+}
+
+.prog-item 	.glyphicon{
+	background-color: white;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	border: solid 2px lightgray;
+	border-radius: 100px;
+	color: gray;
+	margin-bottom: 10px;
+}
+
+.prog-item-wrapper.first .prog-item{
+	float: left;
+}
+
+.prog-item-wrapper.last .prog-item{
+	float: right;
+	margin-right: -8px;
+}
+
+.prog-item-wrapper.passed,.prog-item-wrapper.active {
+	border-color: #ffcc66;
+}
+
+.prog-item-wrapper.passed .glyphicon{
+	background-color: #ffcc66;
+	border-color: #ffcc66;
+	color: white;
+}
+
+.prog-item-wrapper.active .glyphicon{
+	background-color: #C86E0A;
+	border-color: #C86E0A;
+	color: white;
+}
+
+.prog-item-wrapper p{
+	font-weight: bold;
+}
+
+#progress-body{
+	padding: 20px 0;
+}
+
+#payment-form-wrapper{
+	margin: 10px 0 0 20px;
+	padding-left: 20px;
+	border-left: solid 3px #2a7570;;
+}
+
+div.info{
+	padding: 10px;
+	background-color: #D9EBF4;
+	color: #558191;
+	/*text-decoration: bold;*/
+}
+
+div.info .glyphicon{
+	margin-right: 10px;
+}
+
+#payment-form{
+	text-align: left;
+	margin-top: 20px;
+}
