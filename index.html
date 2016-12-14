@@ -29,10 +29,49 @@
 		<div id="cards">
 			<a href="Pages/wish.html">
           	<span class="glyphicon glyphicon-heart-empty"></span>
+          	<span>Wishlist</span>
           	</a>
-			<a href="Pages/cart.html">
-          	<span class="glyphicon glyphicon-shopping-cart"></span>
-          	</a>
+
+
+          	<div id = "cartmodalicon" data-toggle="modal" data-target="#cartModal"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span>Cart</span></a></div>
+		      	<!-- Trigger the modal with a button -->
+				<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+				<!-- Modal -->
+				<div id="cartModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+				    <!-- Modal content-->
+				     <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+			        </div>
+			        <div class="modal-body">
+			          <form role="form">
+			            <div class="form-group">
+			              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+			              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+			            </div>
+			            <div class="form-group">
+			              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+			              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+			            </div>
+			            <div class="checkbox">
+			              <label><input type="checkbox" value="" checked>Remember me</label>
+			            </div>
+			            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+			          </form>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+			          <p>Not a member? <a href="#">Sign Up</a></p>
+			          <p>Forgot <a href="#">Password?</a></p>
+			        </div>
+			      </div>
+    			</div>
+  				</div> 
+          	
 		</div>
 	</section>
 
@@ -140,19 +179,59 @@
 				<div id="signupModal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 
-				    <!-- Modal content-->
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Modal Header</h4>
-				      </div>
-				      <div class="modal-body">
-				        <p>Some text in the modal.</p>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				      </div>
-				    </div>
+			
+    <!-- Modal content-->
+				     <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> SignUp</h4>
+			        </div>
+			        <div class="modal-body">
+			          <form role="form">
+	
+
+   						 <div class="form-group">
+			              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Name</label>
+			              <input type="text" class="form-control" id="Name" placeholder="Enter Name">
+			            </div>
+
+			                <div class="form-group">
+			              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Last Name</label>
+			              <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+			            </div>
+
+
+		           		 <div class="form-group">
+			              <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email Address</label>
+			              <input type="text" class="form-control" id="emailaddress" placeholder="Enter Email">
+			            </div>
+
+			            <div class="form-group">
+			              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+			              <input type="text" class="form-control" id="psw" placeholder="Enter Password">
+			            </div>
+  						 <div class="form-group">
+			              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Confirm Password</label>
+			              <input type="text" class="form-control" id="psw" placeholder="Confirm Password">
+			            </div>
+
+<!-- 			            <div class="checkbox">
+			              <label><input type="checkbox" value="" checked>Remember Me</label>
+			            </div> -->
+			            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Register</button>
+			          </form>
+			        </div>
+<!-- 			        <div class="modal-footer">
+			          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+			  
+			        </div> -->
+			      </div>
+
+
+
+
+
+
 
 				  </div>
 				</div>
@@ -288,79 +367,411 @@
 	<section id="first-slide">
 		<div class="container-fluid">
 			<div class="row">
+					<h2> Best Sellers</h2>
+					 <h3>This Year's Best Sellers</h3>
 				<div class=" col-sm-12 hider">
 					 <div id="new-arival-wrapper" class="slider-wrapper">
 	                    <div class="new-arival slider-item">
+	                        <img src="Images/TLP.png">
+	                        <h4>The Long Patrol</h4>
+	                        <p> Brian Jacques </p>
+	                        <div id = "price"> 23.59$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/RDR.png">
+	                        <h4>Ride the River</h4>
+	                        <p> Louis L'Amour </p>
+	                        <div id = "price"> 17.99$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/NGB.jpg">
+	                        <h4>Never Go Back</h4>
+	                        <p> Lee Child </p>
+	                        <div id = "price"> 29.59$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Christine</h4>
+	                        <p> Stephen King </p>
+	                        <div id = "price"> 22.99$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>The Legend of Luke</h4>
+	                        <p> Brian Jacques </p>
+	                        <div id = "price"> 33.99$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Triss</h4>
+	                        <p> Brian Jacques </p>
+	                        <div id = "price"> 28.69$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>The Realms of Gods</h4>
+	                        <p> Tamora Pierce </p>
+	                        <div id = "price"> 43.99$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>People of the Wolf</h4>
+	                        <p> Kathleen O'Neal Gear </p>
+	                        <div id = "price"> 53.89$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Nightshade</h4>
+	                        <p> John Saul </p>
+	                        <div id = "price"> 13.99$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Amanda</h4>
+	                        <p> Kay Hooper </p>
+	                        <div id = "price"> 18.99$ </div>
+	                    </div>
+	                    <div class="new-arival slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Eloise</h4>
+	                        <p> Kay Thompson </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+          		    </div>
+				</div>
+				 <span class="glyphicon glyphicon-chevron-left slide-left" id="new-arivals-next"></span>
+      			 <span class="glyphicon glyphicon-chevron-right slide-right" id="new-arivals-prev"></span>
+			</div>
+		</div>		
+	</section>
+
+	<section id="second-slide">
+		<div class="container-fluid">
+			<div class="row">
+					<h2>Trending</h2>
+					 <h3>Hot books that are flying off our shelves</h3>
+				<div class=" col-sm-12 hider">
+					 <div id="trending-wrapper" class="slider-wrapper">
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Island of Glass</h4>
+	                        <p> Nora Roberts </p>
+	                        <div id = "price"> 29.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Covert</h4>
+	                        <p> Natasha Preston </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>The Hunted</h4>
+	                        <p> Charlie Higson </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Tools of Titans</h4>
+	                        <p> Timothy Ferris </p>
+	                        <div id = "price"> 23.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Unforgiven</h4>
+	                        <p> Lauren Kate </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Ghosts</h4>
+	                        <p> Raina Telgemeier </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Bron to Run</h4>
+	                        <p> Bruce Stingsteen </p>
+	                        <div id = "price"> 22.74$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Cross the Line</h4>
+	                        <p> James Patterson </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>The Fate of Ten</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="trending slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="trending slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+          		    </div>
+				</div>
+				 <span class="glyphicon glyphicon-chevron-left slide-left" id="trendings-next"></span>
+      			 <span class="glyphicon glyphicon-chevron-right slide-right" id="trendings-prev"></span>
+			</div>
+		</div>		
+	</section>
+
+
+
+
+<section id="third-slide">
+		<div class="container-fluid">
+			<div class="row">
+					<h2> Our Special Deals</h2>
+					 <h3>Get 2 books for 18$, 3 for 24$, 4 for 28$</h3>
+				<div class=" col-sm-12 hider">
+					 <div id="special-wrapper" class="slider-wrapper">
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Angels & Demons</h4>
+	                        <p> Dan Brown </p>
+	                        <div id = "price"> 22.95$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Jurassic Park</h4>
+	                        <p> Michael Crichton </p>
+	                        <div id = "price"> 29.90$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>The Princess Bride</h4>
+	                        <p> William Goldman </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Life of Pi</h4>
+	                        <p> Yann Martel </p>
+	                        <div id = "price"> 21.40$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>American Gods</h4>
+	                        <p> Neil Gaiman </p>
+	                        <div id = "price"> 12.99$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Matilda</h4>
+	                        <p> Roald Dahl </p>
+	                        <div id = "price"> 12.70$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Moby-Dick</h4>
+	                        <p> Herman Melville </p>
+	                        <div id = "price"> 23.69$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>The Winner</h4>
+	                        <p> David Baldacci </p>
+	                        <div id = "price"> 11.90$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>East of Eden</h4>
+	                        <p> John Steinbeck </p>
+	                        <div id = "price"> 28.99$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Catching Fire</h4>
+	                        <p> Suzanne Collins </p>
+	                        <div id = "price"> 16.98$ </div>
+	                    </div>
+	                    <div class="special slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Catch-22</h4>
+	                        <p> Joseph Heller </p>
+	                        <div id = "price"> 19.00$ </div>
+	                    </div>
+          		    </div>
+				</div>
+				 <span class="glyphicon glyphicon-chevron-left slide-left" id="new-arivals-next"></span>
+      			 <span class="glyphicon glyphicon-chevron-right slide-right" id="new-arivals-prev"></span>
+			</div>
+		</div>		
+	</section>
+
+
+<section id="fourth-slide">
+		<div class="container-fluid">
+			<div class="row">
+					<h2> Just Arrived</h2>
+					 <h3>These books have just arrived on our shelves</h3>
+				<div class=" col-sm-12 hider">
+					 <div id="arrived-wrapper" class="slider-wrapper">
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>The Perks of Being a Wallflower</h4>
+	                        <p> Stephen Chbosky </p>
+	                        <div id = "price"> 29.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>Jane Eyre</h4>
+	                        <p> Charlotte Bronte </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+	                    <div class="arrived slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p> Pittacus Lore </p>
+	                        <div id = "price"> 19.90$ </div>
+	                    </div>
+          		    </div>
+				</div>
+				 <span class="glyphicon glyphicon-chevron-left slide-left" id="new-arivals-next"></span>
+      			 <span class="glyphicon glyphicon-chevron-right slide-right" id="new-arivals-prev"></span>
+			</div>
+		</div>		
+	</section>
+
+<section id="fifth-slide">
+		<div class="container-fluid">
+			<div class="row">
+					<h2> Under 5.00$</h2>
+					 <h3>Free shipping on 10$ and more</h3>
+				<div class=" col-sm-12 hider">
+					 <div id="under-wrapper" class="slider-wrapper">
+	                    <div class="under slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>GoT</h4>
+	                        <p>
+	                            subtitle
+	                        </p>
+	                    </div>
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
 	                            subtitle
 	                        </p>
 	                    </div>
-	                    <div class="new-arival slider-item">
+	                    <div class="under slider-item">
+	                        <img src="Images/got.jpg">
+	                        <h4>title</h4>
+	                        <p>
+	                            subtitle
+	                        </p>
+	                    </div>
+	                    <div class="under slider-item">
 	                        <img src="Images/got.jpg">
 	                        <h4>title</h4>
 	                        <p>
@@ -374,6 +785,7 @@
 			</div>
 		</div>		
 	</section>
+
 
 	<section id ="guar-div">
 		<div id="guarantee"><img id="guarantee" src="Images/gr.png" alt="guarantee"></div>
