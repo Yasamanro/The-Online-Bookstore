@@ -2,6 +2,7 @@
  * Created by nima on 1/11/2015.
  */
 $(document).ready(function(){
+
   // Add smooth scrolling to all links in navbar + footer link
   
   // var search_toggle = 0;
@@ -14,8 +15,8 @@ $(document).ready(function(){
   // 		}
   // 		search_toggle = !search_toggle;
   // });
-
-
+  
+  
   var vw = $(window).width()/100;
   var eng = $("body").hasClass("body-en");
 
@@ -66,6 +67,53 @@ $(document).ready(function(){
     animateLeft("new-arival");
   });
 
+  setWrapperWidth("trending");
+  $("#trendings-next").click(function(){
+    animateRight("trending");
+  });
+  $("#trendings-prev").click(function(){
+    animateLeft("trending");
+  });
+
+
+    setWrapperWidth("special");
+  $("#special-next").click(function(){
+    animateRight("special");
+  });
+  $("#special-prev").click(function(){
+    animateLeft("special");
+  });
+
+    setWrapperWidth("arrived");
+  $("#arrived-next").click(function(){
+    animateRight("arrived");
+  });
+  $("#arrived-prev").click(function(){
+    animateLeft("arrived");
+  });
+
+  setWrapperWidth("under");
+  $("#under-next").click(function(){
+    animateRight("under");
+  });
+  $("#under-prev").click(function(){
+    animateLeft("under");
+  });
+
+
+
+$("#year-filter").hide();
+  var menutoggle = 1;
+  $(".navbar-brand").click(function(){
+      if(menutoggle){
+        $("ul.navbar-hide").hide(300);
+        $("#year-filter").show(800);
+      }else{
+        $("#year-filter").hide(300);
+        $("ul.navbar-hide").show(800);
+      }
+      menutoggle =! menutoggle;
+  });  
   
 
 

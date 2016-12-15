@@ -116,3 +116,12 @@ div.info .glyphicon{
 	text-align: left;
 	margin-top: 20px;
 }
+
+#footer{
+	border-top: solid 2px darkgray;
+	background-color: #317470;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: left;
+}

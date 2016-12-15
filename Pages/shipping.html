@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Online Bank Payment</title>
-		<link rel="stylesheet" type="text/css" href="../CSS/shipping.css">
-		<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
-		<script type="text/javascript" src="../JS/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="../JS/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../JS/easin.js"></script>
-		<script type="text/javascript" src="../JS/actions.js"></script>
+		<title>The Online Bookstore - Shipping</title>
+		<link rel="stylesheet" type="text/css" href="../Css/shipping.css">
+		<link rel="stylesheet" type="text/css" href="../Css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../Css/bootstrap.min.css">
+		<script type="text/javascript" src="../Js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../Js/easin.js"></script>
+		<script type="text/javascript" src="../Js/actions.js"></script>
 	</head>
 
 	<body class="body-en">
@@ -44,61 +44,110 @@
 		</div>
 	</section>
 
-
-
-		<section id="progress-body">
+	<section id="progress-body">
 		<div id="payment-wrapper">
 			<h1>Shipping Address</h1>
 			<div id="payment-form-wrapper">
 				<form id="payment-form" class="form-horizontal">
+
 			    <div class="form-group">
-			      <label class="control-label col-sm-2" for="email"></label>
 			      <div class="col-sm-10">
 			        <input type="email" class="form-control" id="email" placeholder="First Name">
 			      </div>
 			    </div>
+
 			    <div class="form-group">
-			      <label class="control-label col-sm-2" for="pwd"></label>
 			      <div class="col-sm-10">          
 			        <input type="password" class="form-control" id="pwd" placeholder="Last Name">
 			      </div>
 			    </div>
+
 			    <div class="form-group">
-			      <label class="control-label col-sm-2" for="pwd"></label>
 			      <div class="col-sm-10">          
 			        <input type="email" class="form-control" id="pwd" placeholder="Street Address">
-			        <input type="email" class="form-control" id="pwd" placeholder="Suite, Building, Apt, etc.(optional)">
-			      </div>
+			    	</div>
 			    </div>
-			   <!--  <div> <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Country<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">US</a></li>
-		            <li><a href="#">Canada</a></li>
-		            <li><a href="#">Islamic Republic of Iran</a></li>
-		            </div> -->
-				  <select name="Country">
-				  	<option value="select">--country--</option>
 
+			    <div class="form-group">
+			    	<div class="col-sm-10">          
+			        <input type="email" class="form-control" id="pwd" placeholder="Suite, Building, Apt, etc.(optional)">
+			    </div> 
+
+			    <div>
+				<select name="Country">
+				  	<option value="select">--country--</option>
 				    <option value="USA">USA</option>
 				    <option value="Canada">Canada</option>
 				    <option value="Iran">Iran</option>
 				    <option value="arabs">Arabs</option>
-				  </select>
+				</select>
+				</div> 
+
+				<!-- <div class="form-group">
+			    	<div class="col-sm-10">          
+			        <input type="email" class="form-control" id="pwd" placeholder="State">
+			    </div>
+
+			    <div class="form-group">
+			    	<div class="col-sm-10">          
+			        <input type="email" class="form-control" id="pwd" placeholder="City">
+			    </div>   -->
+
 			    <div class="form-group">        
 			      <div class=" col-sm-10">
 			        <div class="checkbox">
-			          <label><input type="checkbox"> Remember this card for future purchases</label>
+			          <label><input type="checkbox"> Remember this address for future purchases</label>
 			        </div>
 			      </div>
 			    </div>
-			    <div class="form-group">        
-			      <div class=" col-sm-10">
-			      <a href="/Pages/confirm.html"><button type="submit" class="btn btn-default">Pay</button></a>
-			      </div>
-			    </div>
 			  </form>
+	</section>
+	<a href="bank.html"><button type="submit" class="btn btn-default">Proceed</button></a>
 
+	<section id = "footer">
+		<div class="footerrow">
+			<div class="col-xs-12 col-sm-3">
+				<div class="popularcats">
+					<h3>Popular Categories</h3>
+					<p>Children's</p>
+					<p>Teen and Young Adult</p>
+					<p>Self-Help</p>
+					<p>Literature & Fiction</p>
+					<p>Mystery & Thriller</p>
+					<p>Sci-fi & Fantasy</p>
+					<p>Romance</p>
+					<p>Large Print Books</p>
+					<p>Rare & Collectible Books</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="myaccount">
+					<h3>My Account</h3>
+					<p>Settings</p>
+					<p>Shopping Cart</p>
+					<p>Order History</p>
+					<p>Wish List</p>
+					<br>
+					<h3>Information</h3>
+					<p>Shipping Costs</p>
+				</div>
+			</div>
+			<div class=" col-xs-12 col-sm-3">
+				<div class="help">
+					<h3>Quick Help</h3>
+					<p>Help & Support</p>
+					<p>Contact Us</p>
+				</div>
+			</div>
+			<div class=" col-xs-12 col-sm-3">
+				<div class="offers">
+					<h3>Special Offers</h3>
+					<p>Sign up today to receive exclusive offers, special deals and coupons.</p>
+				</div>
 			</div>
 		</div>
 	</section>
+
+
+	</body>
+</html>

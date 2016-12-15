@@ -1,18 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> The Online Bookstore </title>
-	<link rel="stylesheet" type="text/css" href="CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-	<script type="text/javascript" src="JS/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="JS/bootstrap.min.js"></script>
-</head>
-	<body>
+	<head>
+		<title>The Online Bookstore - Shopping Cart</title>
+		<link rel="stylesheet" type="text/css" href="../Css/shipping.css">
+		<link rel="stylesheet" type="text/css" href="../Css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../Css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../Css/cart.css">
+		<script type="text/javascript" src="../Js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../Js/easin.js"></script>
+		<script type="text/javascript" src="../Js/actions.js"></script>
+	</head>
+
+	<body class="body-en">
 
 	<section id="header">
-		<div id="logo-div"><img id="logo" src="Images/Logo.png" alt="Logo" style="width:260px;height:110px;"></div>
-		<div id="search-container">
-		<form action="" method="post">
-</body>
+		<div id="logo-div"><img id="logo" src="../Images/Logo.png" alt="Logo" style="width:280px;height:110px;"></div>
+	</section>
+
+	<section id="progress">
+		<div class="prog-item-wrapper first active">
+			<div class="prog-item">
+				<span class="glyphicon glyphicon-shopping-cart"></span>
+				<p>Cart</p>
+			</div>
+		</div>
+		<div class="prog-item-wrapper middle">
+			<div class="prog-item">
+				<span class="glyphicon glyphicon-send"></span>
+				<p>Shipping</p>
+			</div>
+		</div>
+		<div class="prog-item-wrapper middle">
+			<div class="prog-item">
+				<span class="glyphicon glyphicon-usd"></span>
+				<p>Payment</p>
+			</div>
+		</div>
+		<div class="prog-item-wrapper last">
+			<div class="prog-item">
+				<span class="glyphicon glyphicon-check"></span>
+				<p>Confirm</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<br>
+		<h2>Shopping Cart</h2>
+		<br>
+		<div id="cart"><img id="logo" src="../Images/Cart.png" alt="Logo" style="width:1000px;height:250px;"></div>
+		<a href="shipping.html"><button type="submit" class="btn btn-default">Continue to Shipping</button></a>
+	</section>
+
+	<section id = "footer">
+		<div class="footerrow">
+			<div class="col-xs-12 col-sm-3">
+				<div class="popularcats">
+					<h3>Popular Categories</h3>
+					<p>Children's</p>
+					<p>Teen and Young Adult</p>
+					<p>Self-Help</p>
+					<p>Literature & Fiction</p>
+					<p>Mystery & Thriller</p>
+					<p>Sci-fi & Fantasy</p>
+					<p>Romance</p>
+					<p>Large Print Books</p>
+					<p>Rare & Collectible Books</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="myaccount">
+					<h3>My Account</h3>
+					<p>Settings</p>
+					<p>Shopping Cart</p>
+					<p>Order History</p>
+					<p>Wish List</p>
+					<br>
+					<h3>Information</h3>
+					<p>Shipping Costs</p>
+				</div>
+			</div>
+			<div class=" col-xs-12 col-sm-3">
+				<div class="help">
+					<h3>Quick Help</h3>
+					<p>Help & Support</p>
+					<p>Contact Us</p>
+				</div>
+			</div>
+			<div class=" col-xs-12 col-sm-3">
+				<div class="offers">
+					<h3>Special Offers</h3>
+					<p>Sign up today to receive exclusive offers, special deals and coupons.</p>
+					<p>blah blah</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</body>
 </html>

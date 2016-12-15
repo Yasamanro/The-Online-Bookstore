@@ -117,29 +117,20 @@ div.info .glyphicon{
 	margin-top: 20px;
 }
 
-form label{
-	display: block !important;
-	width: 100% !important;
-	text-align: left !important;
+.dropdown-toggle{
+	background-color: #ddd;
+	border:solid 1px #888;
+	padding: 5px 10px;
+	text-decoration: none !important;
+	color:#333;
 }
 
 #footer{
-	margin-bottom: 20px;
-	border-top: solid 2px darkgray;
+	background-color: #317470;
+	/*margin-top: 20px;*/
+	/*border-bottom: solid 2px darkgray;*/
 	overflow: hidden;
-	text-align: center;
-}
-
-#footer-div {
+	margin-bottom: 20px;
 	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
-.card-num{
-	width: 10% !important;
-    display: inline-block !important;
-}
-
-#info{
-	width: 30%;
+	text-align: left;
 }
